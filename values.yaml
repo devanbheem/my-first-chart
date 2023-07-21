@@ -82,4 +82,10 @@ tolerations: []
 affinity: {}
 jobs:
   -
-    port:9898
+   name: authArchive
+   interval: 0 50 23 * * ?
+   timezone: Asia/Cacutta
+  -
+   name: phaInject
+   interval: 0 50 10 * * ?
+   timezone: Chicago/America
